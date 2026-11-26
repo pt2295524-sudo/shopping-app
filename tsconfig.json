@@ -24,11 +24,14 @@
     }
   },
   "include": [
-    "**/*.ts",
-    "**/*.tsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
   ],
-  "extends": "expo/tsconfig.base",
-  
+  "exclude": [
+    "dist",
+    "node_modules"
+  ],
+  "extends": "expo/tsconfig.base"
 }
